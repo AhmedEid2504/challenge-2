@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div class="container">
+            <h1>CRUD Management System</h1>
+            <div class="form">
+                <form class="p-form" id="p-form">
+                    <label for="p-name">Product Name</label>
+                    <input type="text" id="p-name" name="p-name" placeholder="Product Name">
+                    <label for="p-price">Product Price</label>
+                    <input type="number" id="p-price" name="p-price" placeholder="Product Price">
+                    <label for="p-category">Product Category</label>
+                    <input type="text" id="p-category" name="p-category" placeholder="Product Category">
+                    <label for="p-description">Product Description</label>
+                    <input type="text" id="p-description" name="p-description" placeholder="Product Description">
+                    <button type="button" class="add-btn" id="add-product">Add Product</button>
+                </form>
+            </div>
+            <input class="search" id="search" type="text" placeholder="Search Product">
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Product Name</th>
+                            <th>Product Price</th>
+                            <th>Product Category</th>
+                            <th>Product Description</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="p-table">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button class="update-btn">Update</button></td>
+                            <td><button class="delete-btn">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
